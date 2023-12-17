@@ -16,6 +16,21 @@
   }
 }
 
+@layer components {
+  .hero-video::after {
+    content: " ";
+    position: absolute;
+    display: block;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 25%;
+    z-index: 20;
+    background: #000;
+    background: linear-gradient(0deg, #000, transparent);
+  }
+}
+
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
